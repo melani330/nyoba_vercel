@@ -9,12 +9,12 @@ const Pendaftaran = (props)=> {
       <div className='container'>
         <div className='col-md-10 col-md-offset-1 section-title'>
           <Typography
-              component="h1"
-              variant="h2"
+              component="h3"
+              variant="h4"
               align="center"
               color="text.primary"
               gutterBottom
-              class="judul_pendaftaran"
+              className="judul_pendaftaran"
             >
               Tahapan Pendaftaran
             </Typography>

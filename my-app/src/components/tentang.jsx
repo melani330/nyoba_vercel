@@ -23,7 +23,7 @@ const theme = createTheme(
 
 export default function Tentang() {
   return (
-    <ThemeProvider theme={theme} class="tentang_theme">
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <main>
         {/* Hero unit */}
@@ -40,19 +40,19 @@ export default function Tentang() {
           <Grid item xs={6} >
             <CardMedia
             component="img"
-            class="tentang_image"
+            className="tentang_image"
             image={gambar}
             alt="Live from space album cover"
           />
         </Grid>
         <Grid item xs={6}>
             <Typography
-              component="h1"
-              variant="h2"
+              component="h3"
+              variant="h4"
               align="left"
               color="text.primary"
               gutterBottom
-              class="judul"
+              className="judul"
             >
               Tentang Usahakuy<span>.</span>ID
             </Typography>
