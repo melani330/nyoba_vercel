@@ -2,17 +2,18 @@ import React, { useState } from "react";
 import {
   AppBar,
   Tabs,
-  Tab,
+  // Tab,
   Toolbar,
-  Button,
+  // Button,
   useMediaQuery,
   useTheme,
   Typography,
 } from "@mui/material";
 import logo from "./logo.png";
 import Drawercomp from "./Drawercomp";
+import "../css/navbar.css"
 
-const Pages = ["About", "Products", "Contact Us"];
+// const Pages = ["About", "Products", "Contact Us"];
 
 function Navbar() {
   const [value, setValue] = useState();
@@ -22,7 +23,7 @@ function Navbar() {
 
   return (
     <React.Fragment>
-      <AppBar position="relative" sx={{ background: "#4fc3f7" }}>
+      <AppBar position="fixed" sx={{ background: "#4fc3f7" }}>
         <Toolbar>
           <img src={logo} alt="Logo" width={75} height={75} />
           {isMatch ? (
@@ -43,11 +44,17 @@ function Navbar() {
                 onChange={(e, value) => setValue(value)}
                 indicatorColor="secondary"
               >
-                {Pages.map((page, index) => (
+                {/* {Pages.map((page, index) => (
                   <Tab key={index} label={page} />
-                ))}
+                ))} */}
               </Tabs>
-              <Button
+              <button className='btn btn-navbar'>
+                  Sign In
+                </button>
+                <button className='btn btn-navbar'>
+                  Sign Up
+                </button>
+              {/* <Button
                 sx={{ marginLeft: "auto", color: "black" }}
                 variant="contained"
               >
@@ -58,7 +65,7 @@ function Navbar() {
                 variant="contained"
               >
                 Sign Up
-              </Button>
+              </Button> */}
             </>
           )}
         </Toolbar>

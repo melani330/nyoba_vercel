@@ -1,7 +1,7 @@
 
 import CardMedia from '@mui/material/CardMedia';
 import * as React from 'react';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
@@ -30,7 +30,7 @@ export default function Tentang() {
         <Box
           sx={{
             bgcolor: 'background.paper',
-            pt: 8,
+            pt: 15,
             pb: 6,
             // display: 'flex', flexDirection: 'row',
             width: '100%' 
@@ -67,7 +67,10 @@ export default function Tentang() {
               justifyContent="left"
               padding-right="20px"
             >
-              <Button variant="contained" background-color="primary">Daftar Sekarang</Button>
+              <button className='btn btn-custom'>
+                  Daftar Sekarang
+                </button>
+              {/* <Button variant="contained" background-color="primary">Daftar Sekarang</Button> */}
             </Stack>
           </Grid>
           </Grid>

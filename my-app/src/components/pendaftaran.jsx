@@ -18,10 +18,11 @@ const Pendaftaran = (props)=> {
             >
               Tahapan Pendaftaran
             </Typography>
+            
             {/* <h2>tahapan pendaftaran</h2> */}
         </div>
         <div className='row'>
-          {props.data.map((d, i) => (
+          {props.DataPendaftaran.map((d, i) => (
                 <div key={`${d.title}-${i}`} className='col-xs-6 col-md-3'>
                   {' '}
                   <i className={d.icon}></i>
